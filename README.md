@@ -9,5 +9,5 @@ Projeto de desenvolvimento de layout e-commerce para Linx.
 
 ## Instalação
 
-Faça o [download](https://github.com/felipemotabr/Linx-E-commerce/calculadora-imc/archive/master.zip) 
+Faça o [download](https://github.com/felipemotabr/Linx-E-commerce/archive/master.zip) 
 desse repositório para ter acesso aos códigos.
