@@ -5,7 +5,7 @@ E-commerce para Linx
 
 ![Demo](link gif de navegacao)
 
-Projeto de desenvolvimento de layout e-commerce para Linx.
+Projeto de desenvolvimento de layout e-commerce que desenvolvi para a Linx.
 
 ## Instalação
 
