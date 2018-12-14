@@ -8,7 +8,7 @@ h2 {
 	letter-spacing: 2.5px;
 	text-transform: uppercase;
 	position: relative;
-	margin: 30px 0 80px;
+	margin: 30px 0 0px;
 }
 
 h2::after {
@@ -28,7 +28,7 @@ h2::after {
 /* Carousel */
 .carousel {
 	margin: 50px auto;
-	padding: 0 70px;
+	padding: 0 40px;
 }
 .carousel .item {
 	min-height: 330px;
@@ -95,7 +95,7 @@ h2::after {
 }
 .carousel .carousel-control {
 	height: 100px;
-    width: 40px;
+    width: 10px;
     background: none;
     margin: auto 0;
     /* background: rgba(0, 0, 0, 0.2); */
@@ -141,7 +141,7 @@ h2::after {
 	margin-right: -3px;
 }
 .carousel .carousel-indicators {
-	bottom: -50px;
+	bottom: -30px;
 }
 .carousel-indicators li, .carousel-indicators li.active {
 	width: 10px;
