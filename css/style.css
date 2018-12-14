@@ -1,29 +1,31 @@
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Nunito", sans-serif;
 }
 h2 {
 	color: #000;
-	font-size: 26px;
+	font-size: 16px;
 	font-weight: 300;
-	text-align: center;
+	letter-spacing: 2.5px;
 	text-transform: uppercase;
 	position: relative;
 	margin: 30px 0 80px;
 }
-h2 b {
-	color: #ffc000;
-}
+
 h2::after {
 	content: "";
-	width: 100px;
+	width: 100;
 	position: absolute;
 	margin: 0 auto;
-	height: 4px;
-	background: rgba(0, 0, 0, 0.2);
+	height: 1px;
+	background-color: #000;
 	left: 0;
 	right: 0;
-	bottom: -20px;
+	bottom: -10px;
+	
 }
+
+
+/* Carousel */
 .carousel {
 	margin: 50px auto;
 	padding: 0 70px;
@@ -34,9 +36,10 @@ h2::after {
 	overflow: hidden;
 }
 .carousel .item .img-box {
-	height: 160px;
+	height: 182px;
 	width: 100%;
 	position: relative;
+	margin-bottom: 10px;
 }
 .carousel .item img {	
 	max-width: 100%;
@@ -49,8 +52,17 @@ h2::after {
 	right: 0;
 }
 .carousel .item h4 {
-	font-size: 18px;
-	margin: 10px 0;
+	margin: 0;
+	min-height: 27px;
+    overflow: hidden;
+    display: block;
+    font-size: 10px;
+    text-align: center;
+    line-height: 14px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
 }
 .carousel .item .btn {
 	color: #333;
@@ -79,14 +91,14 @@ h2::after {
 	text-align: center;
 }
 .carousel .thumb-content {
-	padding: 15px;
+	/* padding: 15px; */
 }
 .carousel .carousel-control {
 	height: 100px;
     width: 40px;
     background: none;
     margin: auto 0;
-    background: rgba(0, 0, 0, 0.2);
+    /* background: rgba(0, 0, 0, 0.2); */
 }
 .carousel .carousel-control i {
     font-size: 30px;
@@ -102,16 +114,24 @@ h2::after {
     font-weight: bold;
 }
 .carousel .item-price {
-	font-size: 13px;
+	font-size: 12px;
 	padding: 2px 0;
+	height: 11px;
 }
 .carousel .item-price strike {
-	color: #999;
-	margin-right: 5px;
+	color: #c5c5c5;
+	/* margin-right: 5px; */
 }
 .carousel .item-price span {
-	color: #86bd57;
-	font-size: 110%;
+	font-size: 12px;
+}
+.carousel .item-price-parcelas {
+    font-weight: 700;
+	font-size: 15px;
+	height: 11px;
+}
+.carousel .item-price-parcelas sup {
+    top: -4px;
 }
 .carousel .carousel-control.left i {
 	margin-left: -3px;
@@ -135,6 +155,7 @@ h2::after {
 .carousel-indicators li.active {	
 	background: rgba(0, 0, 0, 0.6);
 }
+
 .star-rating li {
 	padding: 0;
 }
@@ -143,4 +164,63 @@ h2::after {
 	color: #ffc000;
 }
 
+.star-rating {
+	line-height: 0;
+}
+.list-inline {
+	margin-top: 8px;
+    margin-bottom: 8px;
+}
 
+/* OVERLAY */
+.thumb-wrapper:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+.thumb-wrapper .overlay {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    background: rgba(0,0,0,0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.thumb-wrapper .overlay .custom-specs-action {
+    top: 50%;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.thumb-wrapper .overlay .buttons {
+    color: #fff;
+    font-size: 11px;
+    cursor: pointer;
+    font-family: "Nunito",sans-serif;
+    position: relative;
+    text-align: center;
+    pointer-events: all;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 7px 19px;
+    text-transform: uppercase;
+	background: #d90042;
+	border: none;
+}
+.thumb-wrapper .overlay .buttons:focus {
+	outline: none
+}

@@ -4,20 +4,25 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Product List Carousel for Ecommerce Website</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Vitrine</title>
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous"> -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+
 
 </head>
 <body>
+
+
+
 <div class="container">
+<section>
+
 	<div class="row">
 		<div class="col-md-15">
-			<h2>Trending <b>Products</b></h2>
+			<h2>Talvez tenha interesse por</b></h2>
 			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
 			<!-- Carousel indicators -->
 			<ol class="carousel-indicators">
@@ -26,93 +31,190 @@
 
 			</ol>   
             <!-- Wrapper for carousel items -->
-			<div class="carousel-inner">
+			<div class="carousel-inner" role="listbox">
                 
                 <!-- BLOCO DE SLIDER -->
                 <div class="item carousel-item active">
 					<div class="row">
-						<div class="col-sm-3">
+						
+
+						<!-- PRODUTO -->
+						<div class="col-md-3 carousel-item" itemscope itemtype="http://schema.org/Product">
 							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="https://www.tutorialrepublic.com/examples/images/products/ipad.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Apple iPad</h4>
-									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
+								<a href="#">
+								<figure class="img-box">
+									<img src="img/BONE-STZ-ABA-CURVA-FLORA.jpg" itemprop="image" class="img-responsive img-fluid" alt="">
+									<div class="overlay">
+											<div class="custom-specs-action">
+												<button class="buttons details">Espiar</button>
+											</div>
 									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>						
+								</figure>
+								</a>
+								<figcaption class="thumb-content">
+									<h4 itemprop="name">BONÉ STZ ABA CURVA FLORA</h4>
+									<div class="star-rating">
+											<ul class="list-inline">
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+											</ul>
+										</div>
+									<div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
+										<p class="item-price">
+											<span itemprop="priceCurrency" content="BRL">R$</span>
+											<span itemprop="lowPrice">369.00</span>
+											
+											<strike itemprop="highPrice"><span itemprop="priceCurrency" content="BRL">R$</span> 400.00</strike> </p>
+										<p class="item-price-parcelas"><sup>10x</sup> R$49,00</p>
+									</div>
+								</figcaption>						
 							</div>
 						</div>
-						<div class="col-sm-3">
+
+						<!-- PRODUTO -->
+						<div class="col-md-3 carousel-item" itemscope itemtype="http://schema.org/Product">
 							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="https://www.tutorialrepublic.com/examples/images/products/headphone.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Sony Headphone</h4>
-									<p class="item-price"><strike>$25.00</strike> <span>$23.99</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
+								<a href="#">
+								<figure class="img-box">
+									<img src="img/BONE-STZ-ABA-CURVA-FLORA.jpg" itemprop="image" class="img-responsive img-fluid" alt="">
+									<div class="overlay">
+											<div class="custom-specs-action">
+												<button class="buttons details">Espiar</button>
+											</div>
 									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>						
+								</figure>
+								</a>
+								<figcaption class="thumb-content">
+									<h4 itemprop="name">BONÉ STZ ABA CURVA FLORA</h4>
+									<div class="star-rating">
+											<ul class="list-inline">
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+											</ul>
+										</div>
+									<div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
+										<p class="item-price">
+											<span itemprop="priceCurrency" content="BRL">R$</span>
+											<span itemprop="lowPrice">369.00</span>
+											
+											<strike itemprop="highPrice"><span itemprop="priceCurrency" content="BRL">R$</span> 400.00</strike> </p>
+										<p class="item-price-parcelas"><sup>10x</sup> R$49,00</p>
+									</div>
+								</figcaption>						
 							</div>
-						</div>		
-						<div class="col-sm-3">
+						</div>
+						
+						<!-- PRODUTO -->
+						<div class="col-md-3 carousel-item" itemscope itemtype="http://schema.org/Product">
 							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="https://www.tutorialrepublic.com/examples/images/products/macbook-air.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Macbook Air</h4>
-									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
-										</ul>
+								<a href="#">
+								<figure class="img-box">
+									<img src="img/SANDALIA-SALTO-FINO-BEBECE-NOBUCK-PRETA.jpg" itemprop="image" class="img-responsive img-fluid" alt="">
+									<div class="overlay">
+											<div class="custom-specs-action">
+												<button class="buttons details">Espiar</button>
+											</div>
 									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>						
+								</figure>
+								</a>
+								<figcaption class="thumb-content">
+									<h4 itemprop="name">SANDÁLIA SALTO FINO BEBECÊ NOBUCK PRETA</h4>
+									<div class="star-rating">
+											<ul class="list-inline">
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+											</ul>
+										</div>
+									<div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
+										<p class="item-price">
+											<span itemprop="priceCurrency" content="BRL">R$</span>
+											<span itemprop="lowPrice">369.00</span>
+											
+											<strike itemprop="highPrice"><span itemprop="priceCurrency" content="BRL">R$</span> 400.00</strike> </p>
+										<p class="item-price-parcelas"><sup>10x</sup> R$49,00</p>
+									</div>
+								</figcaption>						
 							</div>
-						</div>								
-						<div class="col-sm-3">
+						</div>
+
+						<!-- PRODUTO -->
+						<div class="col-md-3 carousel-item" itemscope itemtype="http://schema.org/Product">
 							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="https://www.tutorialrepublic.com/examples/images/products/nikon.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Nikon DSLR</h4>
-									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
+								<a href="#">
+								<figure class="img-box">
+									<img src="img/SLIP-ON-LIBERTE-BORDADO-AZUL-MARINHO.jpg" itemprop="image" class="img-responsive img-fluid" alt="">
+									<div class="overlay">
+											<div class="custom-specs-action">
+												<button class="buttons details">Espiar</button>
+											</div>
 									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>						
+								</figure>
+								</a>
+								<figcaption class="thumb-content">
+									<h4 itemprop="name">SLIP-ON LIBERTE BORDADO	AZUL MARINHO</h4>
+									<div class="star-rating">
+											<ul class="list-inline">
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+											</ul>
+										</div>
+									<div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
+										<p class="item-price">
+											<span itemprop="priceCurrency" content="BRL">R$</span>
+											<span itemprop="lowPrice">369.00</span>
+											
+											<strike itemprop="highPrice"><span itemprop="priceCurrency" content="BRL">R$</span> 400.00</strike> </p>
+										<p class="item-price-parcelas"><sup>10x</sup> R$49,00</p>
+									</div>
+								</figcaption>						
+							</div>
+						</div>
+													
+						<!-- PRODUTO -->
+						<div class="col-md-3 carousel-item" itemscope itemtype="http://schema.org/Product">
+							<div class="thumb-wrapper">
+								<a href="#">
+								<figure class="img-box">
+									<img src="img/BOLSA-SHOPPING-BAG-STZ-GRANDE-ZIPER-PRETA.jpg" itemprop="image" class="img-responsive img-fluid" alt="">
+									<div class="overlay">
+											<div class="custom-specs-action">
+												<button class="buttons details">Espiar</button>
+											</div>
+									</div>
+								</figure>
+								</a>
+								<figcaption class="thumb-content">
+									<h4 itemprop="name">BOLSA SHOPPING BAG STZ GRANDE ZÍPER PRETA</h4>
+									<div class="star-rating">
+											<ul class="list-inline">
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+											</ul>
+										</div>
+									<div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
+										<p class="item-price">
+											<span itemprop="priceCurrency" content="BRL">R$</span>
+											<span itemprop="lowPrice">369.00</span>
+											
+											<strike itemprop="highPrice"><span itemprop="priceCurrency" content="BRL">R$</span> 400.00</strike> </p>
+										<p class="item-price-parcelas"><sup>10x</sup> R$49,00</p>
+									</div>
+								</figcaption>						
 							</div>
 						</div>
 					</div>
@@ -120,37 +222,57 @@
                 <!-- FIM BLOCO DE SLIDER -->
                 
                 <!-- BLOCO DE SLIDER -->
-				<div class="item carousel-item">
+                <div class="item carousel-item">
 					<div class="row">
+							<div class="col-sm-3">
+									<div class="thumb-wrapper">
+										<div class="img-box">
+											<img src="img/BONE-STZ-ABA-CURVA-FLORA.jpg" class="img-responsive img-fluid" alt="">
+										</div>
+										<div class="thumb-content">
+											<h4>BONÉ STZ ABA CURVA FLORA</h4>
+											<p class="item-price"><span>$369.00</span> <strike>$400.00</strike> </p>
+											<div class="star-rating">
+												<ul class="list-inline">
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+												</ul>
+											</div>
+										</div>						
+									</div>
+								</div>
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="https://www.tutorialrepublic.com/examples/images/products/play-station.jpg" class="img-responsive img-fluid" alt="">
+									<img src="img/BOLSA-SHOPPING-BAG-STZ-GRANDE-ZIPER-PRETA.jpg" class="img-responsive img-fluid" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Sony Play Station</h4>
-									<p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
+									<h4>BOLSA SHOPPING BAG STZ GRANDE ZÍPER PRETA</h4>
+									<p class="item-price"><span>$369.00</span> <strike>$400.00</strike> </p>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>						
 							</div>
 						</div>
+						
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="https://www.tutorialrepublic.com/examples/images/products/macbook-pro.jpg" class="img-responsive img-fluid" alt="">
+									<img src="img/SLIP-ON-LIBERTE-BORDADO-AZUL-MARINHO.jpg" class="img-responsive img-fluid" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Macbook Pro</h4>
-									<p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+									<h4>SLIP-ON LIBERTE BORDADO	AZUL MARINHO</h4>
+									<p class="item-price"><span>$369.00</span> <strike>$400.00</strike> </p>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -160,39 +282,17 @@
 											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>						
 							</div>
-						</div>
+						</div>								
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="https://www.tutorialrepublic.com/examples/images/products/speaker.jpg" class="img-responsive img-fluid" alt="">
+									<img src="img/SANDALIA-SALTO-FINO-BEBECE-NOBUCK-PRETA.jpg" class="img-responsive img-fluid" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Bose Speaker</h4>
-									<p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>						
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="https://www.tutorialrepublic.com/examples/images/products/galaxy.jpg" class="img-responsive img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Samsung Galaxy S8</h4>
-									<p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
+									<h4>SANDÁLIA SALTO FINO BEBECÊ NOBUCK PRETA</h4>
+									<p class="item-price"><span>$369.00</span> <strike>$400.00</strike> </p>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -202,10 +302,9 @@
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>						
 							</div>
-						</div>						
+						</div>		
 					</div>
                 </div>
                 <!-- FIM BLOCO DE SLIDER -->
@@ -221,6 +320,11 @@
 		</div>
 		</div>
 	</div>
+</section>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>                                		                            
