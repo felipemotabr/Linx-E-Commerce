@@ -61,3 +61,5 @@ typings/
 .next
 
 layout
+
+.DS_Store
