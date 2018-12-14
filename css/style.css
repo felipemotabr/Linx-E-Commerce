@@ -132,6 +132,7 @@ h2::after {
 }
 .carousel .item-price-parcelas sup {
     top: -4px;
+    font-size: 9px;
 }
 .carousel .carousel-control.left i {
 	margin-left: -3px;
@@ -160,7 +161,7 @@ h2::after {
 	padding: 0;
 }
 .star-rating i {
-	font-size: 14px;
+	font-size: 17px;
 	color: #ffc000;
 }
 
@@ -170,6 +171,9 @@ h2::after {
 .list-inline {
 	margin-top: 8px;
     margin-bottom: 8px;
+}
+.item-disable i {
+    color: #eaeff2!important;
 }
 
 /* OVERLAY */

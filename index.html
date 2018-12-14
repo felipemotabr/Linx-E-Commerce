@@ -59,7 +59,7 @@
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
-												<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+												<li class="list-inline-item item-disable"><i class="fa fa-star"></i></li>
 											</ul>
 										</div>
 									<div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
@@ -95,7 +95,7 @@
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
-												<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+												<li class="list-inline-item item-disable"><i class="fa fa-star"></i></li>
 											</ul>
 										</div>
 									<div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
@@ -131,7 +131,7 @@
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
-												<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+												<li class="list-inline-item"><i class="fa fa-star"></i></li>
 											</ul>
 										</div>
 									<div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
@@ -167,7 +167,7 @@
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
-												<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+												<li class="list-inline-item item-disable"><i class="fa fa-star"></i></li>
 											</ul>
 										</div>
 									<div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
@@ -203,7 +203,7 @@
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
 												<li class="list-inline-item"><i class="fa fa-star"></i></li>
-												<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+												<li class="list-inline-item item-disable"><i class="fa fa-star"></i></li>
 											</ul>
 										</div>
 									<div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
@@ -310,7 +310,7 @@
                 <!-- FIM BLOCO DE SLIDER -->
 				
 			</div>
-			<!-- Carousel controls -->
+			<!-- Carousel Controls -->
 			<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
 				<i class="fa fa-angle-left"></i>
 			</a>
@@ -325,6 +325,16 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#myCarousel").carousel();
+    if ( $(window).width() < 640 ) {
+       $('.col-md-3').unwrap().addClass('item');
+       $('.col-md-3:first').addClass('active');
+    }
+});
+</script>
 
 </body>
 </html>                                		                            
