@@ -95,7 +95,7 @@ h2::after {
 }
 .carousel .carousel-control {
 	height: 100px;
-    width: 10px;
+    width: 20px;
     background: none;
     margin: auto 0;
     /* background: rgba(0, 0, 0, 0.2); */
@@ -227,4 +227,35 @@ h2::after {
 }
 .thumb-wrapper .overlay .buttons:focus {
 	outline: none
+}
+
+
+/* SETAS */
+.arrow.next {
+    border-top: 1px solid #484848;
+    border-right: 1px solid #484848;
+    right: 5px;
+}
+.arrow.prev {
+    border-bottom: 1px solid #484848;
+    border-left: 1px solid #484848;
+    left: 5px;
+}
+.arrow {
+    display: block;
+}
+.arrow {
+    text-indent: -9999em;
+    position: absolute;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    z-index: 100;
+    top: 50%;
+    margin: 2px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
