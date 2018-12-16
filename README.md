@@ -1,4 +1,4 @@
-![Demo](https://github.com/felipemotabr/Linx-E-commerce/blob/master/screen.gif)
+![Demo](https://raw.githubusercontent.com/felipemotabr/Linx-E-commerce/master/screen.gif)
 
 # Linx E-commerce
 Desenvolvimento de layout de vitrine que fiz para a Linx. Veja a 
