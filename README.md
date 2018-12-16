@@ -1,9 +1,9 @@
 # Linx E-commerce
 E-commerce para Linx
 
-[Demo](https://felipemotabr.github.io/Linx-E-commerce)
+[Versão Online](https://felipemotabr.github.io/Linx-E-commerce)
 
-![Demo](link gif de navegacao)
+![Demo](https://github.com/felipemotabr/Linx-E-commerce/blob/master/screen.gif)
 
 Desenvolvimento de layout de vitrine que desenvolvi para a Linx.
 
