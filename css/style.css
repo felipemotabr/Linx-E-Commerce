@@ -2,7 +2,10 @@
 body {
 	font-family: "Nunito", sans-serif;
 }
-a, a:hover, a:visited, a:focus {
+a,
+a:hover,
+a:visited,
+a:focus {
     color: #000;
     text-decoration: none
 }
@@ -15,7 +18,6 @@ h2 {
 	position: relative;
 	margin: 30px 0 22px
 }
-
 h2::after {
 	content: "";
 	width: 100;
@@ -44,14 +46,13 @@ h2::after {
     float: right;
 }
 
-
 /* PRODUTO */
 .item {
 	min-height: 330px;
     text-align: center;
 	overflow: hidden;
 }
-.item .img-box {
+.item .item-img {
 	height: 182px;
 	width: 100%;
 	position: relative;
@@ -92,7 +93,8 @@ h2::after {
     margin-top: 5px;
     line-height: 16px;
 }
-.item .btn:hover, .carousel .item .btn:focus {
+.item .btn:hover,
+.carousel .item .btn:focus {
 	color: #fff;
 	background: #000;
 	border-color: #000;
@@ -113,7 +115,6 @@ h2::after {
 }
 .item .item-price del {
 	color: #c5c5c5;
-	/* margin-right: 5px; */
 }
 .item .item-price span {
 	font-size: 12px;
@@ -124,12 +125,10 @@ h2::after {
     letter-spacing: 1px;
 	height: 11px;
 }
-.item .thumb-wrapper {
+.item .item-wrapper {
 	text-align: center;
 }
-.item .thumb-content {
-	/* padding: 15px; */
-}
+
 
 /* Carousel indicators */
 #myCarousel {
@@ -138,7 +137,8 @@ h2::after {
 .carousel .carousel-indicators {
 	bottom: -30px;
 }
-.carousel-indicators li, .carousel-indicators li.active {
+.carousel-indicators li,
+.carousel-indicators li.active {
 	width: 10px;
 	height: 10px;
 	margin: 4px;
@@ -155,8 +155,8 @@ h2::after {
 .carousel-control {
     width: 4%;
 }
-.carousel-control.left,.carousel-control.right {
-    /* margin-left:15px; */
+.carousel-control.left,
+.carousel-control.right {
     background-image:none;
 }
 
@@ -168,7 +168,6 @@ h2::after {
 	font-size: 17px;
 	color: #ffc000;
 }
-
 .star-rating {
 	line-height: 0;
 }
@@ -181,11 +180,11 @@ h2::after {
 }
 
 /* OVERLAY */
-.thumb-wrapper:hover .overlay {
+.item-wrapper:hover .overlay {
     opacity: 1;
     visibility: visible;
 }
-.img-box .overlay {
+.item-img .overlay {
     top: 0;
     left: 0;
     z-index: 1;
@@ -205,7 +204,7 @@ h2::after {
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-.img-box .overlay .custom-specs-action {
+.item-img .overlay .custom-specs-action {
     top: 50%;
     position: relative;
     -webkit-transform: translateY(-50%);
@@ -214,7 +213,7 @@ h2::after {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-.img-box .overlay .buttons {
+.item-img .overlay .buttons {
     color: #fff;
     font-size: 11px;
     cursor: pointer;
@@ -229,7 +228,7 @@ h2::after {
 	background: #d90042;
 	border: none;
 }
-.img-box .overlay .buttons:focus {
+.item-img .overlay .buttons:focus {
 	outline: none
 }
 
@@ -237,12 +236,12 @@ h2::after {
 .arrow.next {
     border-top: 1px solid #484848;
     border-right: 1px solid #484848;
-    right: 0px;
+    right: 10px;
 }
 .arrow.prev {
     border-bottom: 1px solid #484848;
     border-left: 1px solid #484848;
-    left: 0px;
+    left: 10px;
 }
 .arrow {
     display: block;
@@ -281,14 +280,8 @@ h2::after {
 	.active > div:first-child { 
         display:block; 
     }
-
 }
 @media (min-width: 767px) and (max-width: 992px ) {
-	/* .carousel-inner .active.left { 
-        left: -50%;
-    }
-	.carousel-inner .next        { left:  50%; }
-	.carousel-inner .prev		 { left: -50%; } */
 	.active > div { 
         display:none;
     }
@@ -299,12 +292,10 @@ h2::after {
         display:block; 
     }
     .item-fixo{
-        width: 67%!important;
+        width: 37%!important;
         margin: auto;
     }
-    
 }
-
 @media (max-width: 992px ) {
     a.carousel-control {
         display: none;
@@ -314,14 +305,10 @@ h2::after {
     .carousel-indicators {
         display: none!important
     }
-    
-	/* .carousel-inner .active.left { left: -25%; }
-	.carousel-inner .next        { left:  25%; }
-	.carousel-inner .prev		 { left: -25%; }	 */
 }
 @media (min-width: 1140px) {
     .vistiado,
-    .thumb-wrapper {
+    .item-wrapper {
         width: 176px;
         float: right;
     }
@@ -330,17 +317,13 @@ h2::after {
     #myCarousel {
         display: table;
     }
-    .item-fixo{
-        /* width: 80%; */
-    }
 }
 
 @media (max-width: 767px) {
     .item-fixo{
         width: 100%;
     }
-    .thumb-wrapper:hover .overlay {
+    .item-wrapper:hover .overlay {
         opacity: 0;
     }
-    
 }
